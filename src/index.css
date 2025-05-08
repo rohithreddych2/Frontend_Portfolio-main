@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+
+@import "tailwindcss/preflight";
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@layer utilities {
+  .animate-fade-in-down {
+    animation: fadeInDown 1s ease-out;
+  }
+  .animate-fade-in-up {
+    animation: fadeInUp 1s ease-out;
+  }
+
+  @keyframes fadeInDown {
+    0% { opacity: 0; transform: translateY(-30px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(30px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+}
