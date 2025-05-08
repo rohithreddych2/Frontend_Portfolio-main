@@ -2,6 +2,7 @@
 
 
 @import "tailwindcss/preflight";
+@import "tailwindcss/utilities";
 
 @layer utilities {
   .animate-fade-in-down {
